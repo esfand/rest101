@@ -3,7 +3,7 @@ package com.webwarp.rest101;
 import org.jvnet.hk2.annotations.Contract;
 
 @Contract
-public interface TimeOfTheDayContract {
+public interface TimeOfTheDay {
 
     public abstract String getTimeOfTheDay(String name);
 

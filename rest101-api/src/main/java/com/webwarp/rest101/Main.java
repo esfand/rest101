@@ -5,13 +5,15 @@ package com.webwarp.rest101;
 //import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;
-import java.net.URI;
+//import javax.inject.Inject;
+//import java.net.URI;
 
 /**
  * Main class.
  *
  */
 public class Main {
+    
     // Base URI the Grizzly HTTP server will listen on
     public static final String BASE_URI = "http://localhost:8080/myapp/";
 
@@ -36,6 +38,9 @@ public class Main {
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
     }
     */
+    
+//    @Inject
+    TimeOfTheDay tod;
 
     /**
      * Main method.
@@ -43,6 +48,12 @@ public class Main {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
+        
+        Main main = new Main();
+        if(main.tod == null) {
+            System.out.println("NULL");
+        }
+        
         /*
         final HttpServer server = startServer();
         System.out.println(String.format("Jersey app started with WADL available at "

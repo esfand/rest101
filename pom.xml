@@ -9,12 +9,8 @@
     
     <name>rest101</name>
 
-    <properties>
-        <jersey.version>2.0-rc1</jersey.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    
     <modules>
+        <module>rest101-parent</module>
         <module>rest101-api</module>
         <module>rest101-services</module>
         <module>rest101-resources</module>
